@@ -2,7 +2,7 @@ header{
     position: fixed;
     z-index: 3;
     width: 100%;
-    bottom:18.3cm;
+    bottom:14.6cm;
 }
 .name{
     position: absolute;
@@ -18,7 +18,7 @@ header{
 .eslogan{
     position: absolute;
     font-size: 20px;
-    bottom: 10.5cm;
+    bottom: 9.5cm;
     left: 140px;
     cursor: pointer;
 }
@@ -45,7 +45,7 @@ header{
     left: 0;
   }
   .a::before {
-    background-color: #42bb52;
+    background-color: #3563fa;
     height: 2px;
     bottom: 0;
     transform-origin: 100% 50%;
@@ -59,7 +59,7 @@ header{
     transform-origin: 100% 50%;
     transform: translate3d(200%, 0, 0);
     transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-    color: #42bb52;
+    color: #3563fa;
   }
   
   .a:hover::before {
