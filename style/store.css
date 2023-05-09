@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    transition: 1s;
+    padding: 30px 50px;
+    z-index: 10;
+}
+header ul li a::after{
+    content: "";
+    height: 3px;
+    width: 0px;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -5px;
+    right: 0%;
+    transition: .3s;
+}
+header ul li a:hover::after{
+    width: 100%;
+    left: 0%;
+}
+nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-left: 0px;
+    transition: 1s;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+header ul li{
+    list-style-type: none;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    font-family: Helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-bottom-width: 0;
+}
+.logo{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    margin-left: 50%;
+}
+.search{
+    position: absolute;
+    padding: 5px;
+}
+.search input{
+    left: 13px;
+    top: -15px;
+    border-radius: 30px;
+    border: 2px solid white;
+    height: 20px;
+    width: 0px;
+    outline: none;
+    background-color: inherit;
+    padding: 8px;
+    padding-right: 12px;
+    color: white;
+    font-size: 15px;
+    text-align: right;
+    transition: all 0.6s ease;
+}
+.btn{
+    top: -18px;
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: larger;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search:hover input{
+    width: 150px;
+}
+.search input:focus{
+    width: 150px;
+}
