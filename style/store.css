@@ -29,7 +29,7 @@ header ul li a:hover::after{
     width: 100%;
     left: 0%;
 }
-nav{
+.header_nav{
     display: flex;
     justify-content: right;
     align-items: center;
@@ -73,8 +73,8 @@ header ul li a{
     padding: 5px;
 }
 .search input{
-    left: 13px;
-    top: -15px;
+    top: 113px;
+    left: 20px;
     border-radius: 30px;
     border: 2px solid white;
     height: 20px;
@@ -87,9 +87,11 @@ header ul li a{
     font-size: 15px;
     text-align: right;
     transition: all 0.6s ease;
+    z-index: 2;
 }
 .btn{
-    top: -18px;
+    top: 110px;
+    left: 15px;
     position: absolute;
     background-color: white;
     width: 50px;
@@ -99,10 +101,371 @@ header ul li a{
     font-size: larger;
     border-radius: 50%;
     cursor: pointer;
+    z-index: 2;
 }
 .search:hover input{
-    width: 150px;
+    width: 240px;
 }
 .search input:focus{
-    width: 150px;
+    width: 240px;
+}
+.first-section{
+    height: 700px;
+    width: 100%;
+    background-color: rgb(29, 27, 27);
+    background-size: cover;
+    background-image: url('https://w0.peakpx.com/wallpaper/635/292/HD-wallpaper-3d-black-polygons-high-quality.jpg');
+}
+.title{
+    padding-top: 12%;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    display: inline-block;
+}
+.animated-icon{
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 100px;
+}
+.animated-icon i{
+    animation-name: iconbag;
+    animation-duration: 2s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+@keyframes iconbag {
+    0%{top: -10px;}
+    50%{top:10px;}
+    100%{top: -10px;}
+}
+.p1{
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title hr{
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5px;
+}
+.categorias{
+    background: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    margin-top: 70px;
+}
+.nav_cat{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-left: 0px;
+    transition: 1s;
+}
+.categorias ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categorias  ul li{
+    list-style-type: none;
+    list-style: none;
+}
+.categorias ul li a{
+    position: relative;
+    font-family: Helvetica;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom-width: 0;
+    margin: 0px 30px 0px 30px;
+}
+.pint::after{
+    content: "";
+    height: 3px;
+    width: 0px;
+    background: rgb(4, 212, 212);
+    border-radius: 10px;
+    position: absolute;
+    bottom: -5px;
+    right: 0%;
+    transition: .3s;
+}
+.lit::after{
+    content: "";
+    height: 3px;
+    width: 0px;
+    background: yellow;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -5px;
+    right: 0%;
+    transition: .3s;
+}
+.mus::after{
+    content: "";
+    height: 3px;
+    width: 0px;
+    background: green;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -5px;
+    right: 0%;
+    transition: .3s;
+}
+.esc::after{
+    content: "";
+    height: 3px;
+    width: 0px;
+    background: gray;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -5px;
+    right: 0%;
+    transition: .3s;
+}
+.cin::after{
+    content: "";
+    height: 3px;
+    width: 0px;
+    background: rgb(250, 127, 147);
+    border-radius: 10px;
+    position: absolute;
+    bottom: -5px;
+    right: 0%;
+    transition: .3s;
+}
+.art::after{
+    content: "";
+    height: 3px;
+    width: 0px;
+    background: brown;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -5px;
+    right: 0%;
+    transition: .3s;
+}
+.categorias ul li a:hover::after{
+    width: 100%;
+    left: 0%;
+}
+.section-dark{
+    width: 100%;
+    height: 610px;
+    background-color: rgb(29, 27, 27);
+    padding-top: 50px;
+}
+.section-ligth{
+    width: 100%;
+    height: 610px;
+    background-color: rgb(44, 44, 44);
+    padding-top: 50px;
+}
+#lit{
+    width: 26%;
+    margin-left: 37%;
+    margin-right: 37%;
+    margin-top: 10px;
+    border: 2px solid yellow;
+}
+.p2{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#pint{
+    width: 26%;
+    margin-left: 37%;
+    margin-right: 37%;
+    margin-top: 10px;
+    border: 2px solid rgb(4, 212, 212);
+}
+#mus{
+    width: 26%;
+    margin-left: 37%;
+    margin-right: 37%;
+    margin-top: 10px;
+    border: 2px solid green;
+}
+#esc{
+    width: 26%;
+    margin-left: 37%;
+    margin-right: 37%;
+    margin-top: 10px;
+    border: 2px solid gray;
+}
+#cin{
+    width: 26%;
+    margin-left: 37%;
+    margin-right: 37%;
+    margin-top: 10px;
+    border: 2px solid rgb(250, 127, 147);
+}
+#art{
+    width: 26%;
+    margin-left: 37%;
+    margin-right: 37%;
+    margin-top: 10px;
+    border: 2px solid brown;
+}
+.container{
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+}
+.cardone{
+    background-color: white;
+    width: 270px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 15px;
+}
+.cardtwo{
+    background-color: white;
+    width: 270px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 15px;
+}
+.cardthree{
+    background-color: white;
+    width: 270px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 15px;
+}
+.cardfour{
+    background-color: white;
+    width: 270px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 15px;
+}
+.cardfive{
+    background-color: white;
+    width: 270px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 15px;
+}
+.cardsix{
+    background-color: white;
+    width: 270px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 15px;
+}
+.card_image{
+    background-color: aqua;
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+.card-1{
+    background-image: url('https://www.researchgate.net/profile/Eska-Elena-Solano-Meneses-2/publication/358893397/figure/fig5/AS:1128110879719433@1645974001322/der-Noche-estrellada-Van-Gogh-1889-Fuente-El-economista-2016_Q320.jpg');
+}
+.card-2{
+    background-image: url('https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2017/04/26120438/Guernica-Pablo-Picasso-pintura-obra-1920.jpg');
+}
+.card-3{
+    background-image: url('https://cdn.culturagenial.com/es/imagenes/dali-la-persistencia-de-la-memoria-cke.jpg');
+}
+.cardone p{
+    padding: 5px 15px 5px 15px;
+}
+.cardone h2{
+    padding: 10px 10px 0px 10px;
+}
+.cardtwo p{
+    padding: 5px 15px 5px 15px;
+}
+.cardtwo h2{
+    padding: 10px 10px 0px 10px;
+}
+.cardthree p{
+    padding: 5px 15px 5px 15px;
+}
+.cardthree h2{
+    padding: 10px 10px 0px 10px;
+}
+.cardfour p{
+    padding: 5px 15px 5px 15px;
+}
+.cardfour h2{
+    padding: 10px 10px 0px 10px;
+}
+.cardfive p{
+    padding: 5px 15px 5px 15px;
+}
+.cardfive h2{
+    padding: 10px 10px 0px 10px;
+}
+.cardsix p{
+    padding: 5px 15px 5px 15px;
+}
+.cardsix h2{
+    padding: 10px 10px 0px 10px;
+}
+.cardone:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s ;
+    border: 3px solid aqua;
+}
+.cardtwo:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s ;
+    border: 3px solid yellow;
+}
+.cardthree:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s ;
+    border: 3px solid green;
+}
+.cardfour:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s ;
+    border: 3px solid gray;
+}
+.cardfive:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s ;
+    border: 3px solid rgb(250, 127, 147);
+}
+.cardsix:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s ;
+    border: 3px solid brown;
+}
+.btn_volver{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: inherit;
+    top: 600px;
+    left: 600px;
+    align-items: center;
+    justify-content: center;
+}
+.btn_volver i{
+    color: white;
+    font-size: 50px;
+    z-index: 21;
 }
