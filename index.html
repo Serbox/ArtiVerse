@@ -9,10 +9,41 @@
     <title>Inicio</title>
 </head>
 <header>
-    <!-- nav-bar -->
+  <nav id="navbar-example2" class="navbar navbar-light  px-3">
+    <a class="navbar-brand text-light " href="#">ArtiVerse</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#scrollspyHeading1">Inicio</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-light" href="#scrollspyHeading2">Second</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Mas</a>
+        <ul class="dropdown-menu bg-success">
+          <li><a class="dropdown-item  " href="#scrollspyHeading3">Third</a></li>
+          <li><a class="dropdown-item " href="#scrollspyHeading4">Fourth</a></li>
+          <li>
+          <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  
 </header>
 <body>
-    <section class="section-one" alt="sección de presentación">
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+   
+  
+    <section id="scrollspyHeading1" class="section-one" alt="sección de presentación">
+      <div class="name">
+        <p class="arti">Arti 
+          <a href="#" class="a" id="style-2" data-replace="Verse">
+            <span>Verse</span>
+          </a>
+        </p>
+      </div>
+
       <div id="carouselExampleCaptions" class="carousel slide slide" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -24,52 +55,48 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <video class="d-block w-100" src="./video/tunel.mp4" loop autoplay></video>
+                <video class="d-block w-100" src="./video/tunel.mp4" loop autoplay muted preload="auto"></video>
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>ArtiVerse</h5>
-                    <p>El arte no conoce pronteras: descubre una nueva forma de conectar al mundo</p>
+                    
+                    <p class="eslogan">El arte no conoce fronteras: descubre una nueva forma de conectar al mundo</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <video class="d-block w-100"  loop src="./video/tunel.mp4" autoplay ></video>
+                <video class="d-block w-100"  loop src="./video/tunel.mp4" autoplay muted preload="auto"></video>
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>ArtiVerse</h5>
-                  <p>El arte no conoce pronteras: descubre una nueva forma de conectar al mundo</p>
+                  
+                  <p class="eslogan">El arte no conoce fronteras: descubre una nueva forma de conectar al mundo</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <video class="d-block w-100" src="video3.mp4" controls></video>
+                <video class="d-block w-100" src="./video/tunel.mp4" loop autoplay muted preload="auto"></video>
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>ArtiVerse</h5>
-                  <p>El arte no conoce pronteras: descubre una nueva forma de conectar al mundo</p>
+                  
+                  <p class="eslogan">El arte no conoce fronteras: descubre una nueva forma de conectar al mundo</p>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        
+    </div>
+    <div class="icon-scroll" id="icon-scroll2">
+      <div class="field"> 
+        <div class="scroll"></div>
+      </div>
     </div>
     </section>
-    <section class="section-two" alt="sección de información">
-
+    <section id="scrollspyHeading2" class="section-two" alt="sección de información">
+      <p>hola</p>
     </section>
-    <section class="section-three" alt="sección de información dos">
-
+    <section id="scrollspyHeading3" class="section-three" alt="sección de información dos">
+      <p>mundo</p>
     </section>
-    <section class="section-four" alt="sección de información tres">
-
+    <section  id="scrollspyHeading4"class="section-four" alt="sección de información tres">
+      <p>si</p>
     </section>
-    <footer name="footer" alt="pie de pagina">
-
+    <footer id="scrollspyHeading5" name="footer" alt="pie de pagina">
+      <p>no</p>
     </footer>
-
+  </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
