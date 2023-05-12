@@ -473,3 +473,58 @@ header{
       width: 100px;
       height: auto;
     }
+    .color-4{
+      width: 100%;
+      height: 885px;
+      background-color: #000000;
+    }
+    .espacio{
+      width: 100%;
+      height: 300px;
+      background-color: transparent;
+    }
+
+    /*---//----//----///----//---//--//--/--/*/
+
+    .container3 {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100vh; /* ajusta la altura según tus necesidades */
+    }
+    
+    .card {
+      flex: 1 1 calc(50% - 20px);
+      margin: 10px;
+      background-color: #c01212;
+      background-image: url("ruta/a/la/imagen.jpg");
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+    }
+    
+    .card::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    .card:hover::after {
+      opacity: 1;
+    }
+    
+    .card p {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: rgb(0, 0, 0);
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    
